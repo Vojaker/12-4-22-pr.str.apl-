@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>Pole i obwód kola JS</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <input type="button" onclick="pole()" value="oblicz pole">
+        <p id="r"></p>
+        <script>
+        
+            function pole() {
+                var pi = 3.14;
+                let r = prompt("Podaj r: ");
+                document.getElementById(r).innerHTML = "Pole: " + pi*r*r;
+            }
+        </script>
+    </body>
+</html>
