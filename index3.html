@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <title>JavaScript: Tworzenie obiektów.</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p id="paragraf1"> </p>
+        <p id="paragraf2"> </p>
+        <p id="paragraf3"> </p>
+        <p id="paragraf4"> </p>
+        <input type="button" onclick="przycisk()" value="kliknij">
+
+        
+        <script>
+            class Pojazd 
+            {
+                constructor (mrk, cn, mdl, klr)
+                {
+                    this.marka = mrk;
+                    this.cena = cn;
+                    this.model = mdl;
+                    this.kolor = klr;
+                } 
+                wyswietl(){
+                    
+                }
+            }
+            function przycisk(){
+                    let mrk = prompt("Marka: ", "Podaj marke");
+                    document.getElementById("paragraf1").innerHTML = "Marka: " + mrk;
+                    let cn = prompt("Cena: ", "Podaj cene");
+                    document.getElementById("paragraf2").innerHTML = "Cena: " + cn;
+                    let mdl = prompt("Model: ", "Podaj model");
+                    document.getElementById("paragraf3").innerHTML = "Model: " + mdl;
+                    let klr = prompt("Kolor: ", "Podaj kolor");
+                    document.getElementById("paragraf4").innerHTML = "Kolor: " + klr;
+                }
+
+        </script>
+
+    </body>
+</html>
