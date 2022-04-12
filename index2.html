@@ -6,9 +6,22 @@
     </head>
     <body>
         <p id="paragraf"> </p>
+        <input type="button" onclick="przycisk()" value="kliknij">
 
         <script>
+        function przycisk() 
+        {
             var O1 = new Object();
+
+            O1.imie = "Piotr";
+            O1.nazwisko = "Siewniak";
+            O1["wiek"] = 50;
+            O1.daneWyjscie = function(){
+                return this.imie + " " + this.nazwisko + ", wiek: "  + this.wiek;
+            }
+       
+        document.getElementById("paragraf").innerHTML = O1.daneWyjscie();
+        }
         </script>
 
     </body>
